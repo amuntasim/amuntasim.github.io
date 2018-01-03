@@ -1,0 +1,528 @@
+/**
+ * Site header   **********************************************************
+ */
+.site-header {
+  border-bottom: 1px solid $grey-color-light;
+  background-color: #fff;
+  opacity: 0.75;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 56px;
+  width: 100%;
+  z-index: 50;
+}
+
+.site-title {
+  font-size: 20px;
+  line-height: $nav-height;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  &:hover {
+    text-decoration: none;
+    color: $theme-color;
+  }
+}
+
+.site-nav {
+  float: right;
+  line-height: $nav-height;
+  .page-link {
+    line-height: $base-line-height;
+    font-size: 18px;
+    color: #256603;
+    // Gaps between nav items, but not on the first one
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+  @include media-query($on-palm) {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    text-align: right;
+    &:hover .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+    .page-link {
+      display: inline;
+    }
+  }
+}
+
+.header-bar {
+  left: 0px;
+  top: 0px;
+  position: relative;
+  font-size: 20px;
+  display: block;
+  opacity: 0.75;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  line-height: 3em;
+  z-index: 25;
+  h1 {
+    color: $theme-color;
+    font-size: 75px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+
+/**
+ * Site footer  **********************************************************
+ */
+.site-footer {
+  border-top: 1px solid $grey-color-dark;
+  font-size: 10px;
+  background-color: $grey-color-dark;
+  padding: 2px;
+  color: #aaa;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 25px;
+  width: 100%;
+}
+
+/**
+ * Pagination   **********************************************************
+ */
+.pagination {
+  max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 50px;
+}
+
+.paginationicon {
+  font-size: 50px;
+  a {
+    color: $theme-color;
+  }
+}
+
+/**
+ * Page content   **********************************************************
+ */
+.page-content {
+  padding: 100px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */
+}
+
+.page-heading {
+  font-size: 20px;
+}
+
+.post-list {
+  margin: 0px 0;
+  list-style: none;
+  > li {
+    margin-bottom: $vertical-spacing-unit;
+  }
+}
+
+.contacticon {
+  font-size: 40px;
+  display: block;
+  margin: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+/**
+ * Posts  **********************************************************
+ */
+.post-header {
+  margin-bottom: $vertical-spacing-unit;
+}
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: #256603;
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
+}
+
+.post-content {
+  h2 {
+    font-size: 42px;
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+  h3 {
+    font-size: 30px;
+    @include media-query($on-laptop) {
+      font-size: 22px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+  margin-bottom: 0px;
+}
+
+.post-link {
+  display: block;
+  font-size: 42px;
+}
+
+/** Poem formatting ********************************************/
+.poem-title {
+  font-size: 24px;
+  letter-spacing: -1px;
+  line-height: 1;
+  @include media-query($on-laptop) {
+    font-size: 16px;
+  }
+}
+
+/**
+ * Portfolio grid **********************************************************
+*/
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.project {
+  width: 33.33%;
+  height: 250px;
+  float: left;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  width: 500px;
+  height: auto;
+  position: relative;
+  left: -25%;
+  top: -5%;
+}
+
+.thumbnail a {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 230px;
+}
+
+.thumbnail a span {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: $grey-color-light;
+  padding: 40px;
+  text-align: center;
+}
+
+.thumbnail a:hover span {
+  display: block;
+}
+
+/**
+ * Portfolio pages **********************************************************
+*/
+.blankbox {
+  background: $theme-color;
+}
+
+.img_row {
+  height: $img_height;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: $img_spacing;
+}
+
+.col {
+  width: 100%;
+  height: 100%;
+  float: left;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: $img_spacing;
+}
+
+.right {
+  float: right;
+}
+
+.one {
+  width: 33.33%;
+}
+
+.two {
+  width: 66.66%;
+}
+
+.three {
+  width: 100%;
+}
+
+.caption {
+  height: 100%;
+  color: $caption_color;
+  text-align: center;
+  vertical-align: middle;
+  font-size: $caption_font_size;
+}
+
+/* Main page with stikky-footer
+-------------------------------------------------- */
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif !important;
+  /* The html and body elements cannot have any padding or margin. */
+  border-top: 3px solid #588106;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -65px;
+  /* Pad bottom by footer height */
+  /*padding: 0 0 60px;*/
+}
+
+/* Navbar
+-------------------------------------------------- */
+
+.navbar-static-top {
+  margin-bottom: 10px;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+  color: #6b6b6b;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #6b6b6b;
+}
+
+.navbar-default .navbar-text {
+  color: #6b6b6b;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #6b6b6b;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #6b6b6b;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #6b6b6b;
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #6b6b6b;
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #6b6b6b;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #6b6b6b;
+}
+
+.navbar-default .navbar-link {
+  color: #6b6b6b;
+}
+
+.navbar-default .navbar-link:hover {
+  color: #6b6b6b;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #6b6b6b;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #6b6b6b;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #6b6b6b;
+    background-color: #ffffff;
+  }
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+.container {
+  width: auto;
+  max-width: 800px;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.container a {
+  color: #256603;
+}
+
+.container a:hover {
+  color: #268872;
+}
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.panel-default h4 {
+  text-align: left;
+  line-height: 24px;
+  font-size: 22px;
+}
+
+.panel-default h5 {
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.panel-default h6 {
+  font-size: 15px;
+}
+
+.panel-default h4 a, h5 a {
+  color: #27A822;
+}
+
+.panel-default h4 a:hover, h5 a:hover {
+  color: #267723;
+}
+
+.panel {
+  border-style: none;
+}
+
+.panel-body {
+  padding-top: -10px;
+  text-align: left;
+}
+
+.social {
+  padding-top: 12px;
+  word-spacing: 25px;
+}
+
+.social h4 > a {
+  color: #000000;
+}
+
+.avatar {
+  padding-top: 50px;
+}
+
+.blog-post {
+  padding-top: 15px;
+}
+
+.blog-title {
+  padding-top: 2px;
+}
+
+.related-posts h4 {
+  text-align: center;
+}
+
+.page-not-found {
+  padding-top: 20%;
+}
+
+.disqus {
+  padding-bottom: 15px;
+}
+
+.blogpost {
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+.footer {
+  text-decoration: none !important;
+}
+
+.text-muted {
+  color: #6b6b6b;
+}
+
+div.footer {
+  border-bottom: 5px solid #27A822;;
+}
+
+/* Set the fixed height of the footer here */
+/*.footer {
+  height: 50px;
+  padding-bottom: 15px;
+
+}*/

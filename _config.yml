@@ -1,8 +1,31 @@
+# Site settings
 title: Muntasim Ahmed
-description: 
-google_analytics: 
-show_downloads: false
-theme: jekyll-theme-minimal
+email: ahmed2tul@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A simple, whitespace, helvetica based portfolio theme.
+baseurl:  # the subpath of your site, e.g. /blog/
+url:  # the base hostname & protocol for your site
+twitter_username: amuntasim
+github_username:  amuntasim
 
-gems:
-  - jekyll-mentions
+# Build settings
+markdown: kramdown
+
+highlighter: rouge
+
+# Pagination
+paginate: 15
+paginate_path: "/blog/page:num/"
+
+plugins:
+  - octopress-paginate
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+  poetry:
+    output: true
+    permalink: /poetry/:path/
+
+
