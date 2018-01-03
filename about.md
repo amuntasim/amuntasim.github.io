@@ -9,7 +9,7 @@ permalink: /about/
 
 <br/>
 Hi,
-I’m Muntasim Ahmed, a post graduate in computer science and engineering. I've been in software engineering since 2006. Mainly Ruby developer, but not limited to. 
+I’m Muntasim Ahmed, a post graduate in computer science and engineering. I've been in software engineering since 2006. Mainly Ruby developer, but not limited to. Recently trying to be an entrepreneur :)
 
 <h4>Skills</h4>
 <p>
