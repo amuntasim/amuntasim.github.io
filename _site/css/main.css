@@ -156,7 +156,7 @@ pre {
   opacity: 0.75;
   position: fixed;
   left: 0px;
-  top: 0px;
+  top: 5px;
   height: 56px;
   width: 100%;
   z-index: 50; }
@@ -270,7 +270,8 @@ pre {
   margin-bottom: 40px; }
 
 .post-title {
-  font-size: 42px;
+  font-size: 36px;
+  margin-bottom: 5px;
   letter-spacing: -1px;
   line-height: 1;
   color: #256603; }
@@ -337,17 +338,14 @@ pre {
   overflow: hidden; }
 
 .thumbnail img {
-  width: 500px;
-  height: auto;
-  position: relative;
-  left: -25%;
-  top: -5%; }
+  height: 220px !important;
+  position: relative; }
 
 .thumbnail a {
   float: left;
   position: relative;
   width: 100%;
-  height: 230px; }
+  height: 220px; }
 
 .thumbnail a span {
   display: none;
@@ -358,7 +356,7 @@ pre {
   right: 0;
   background: rgba(0, 0, 0, 0.4);
   color: #ddd;
-  padding: 40px;
+  padding: 20px;
   text-align: center; }
 
 .thumbnail a:hover span {
@@ -412,7 +410,7 @@ body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif !important;
   /* The html and body elements cannot have any padding or margin. */
-  border-top: 3px solid #588106; }
+  border-top: 5px solid #588106; }
 
 /* Wrapper for page content to push down footer */
 #wrap {

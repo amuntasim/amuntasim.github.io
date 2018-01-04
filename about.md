@@ -11,6 +11,16 @@ permalink: /about/
 Hi,
 I’m Muntasim Ahmed, a post graduate in computer science and engineering. I've been in software engineering since 2006. Mainly Ruby developer, but not limited to. Recently trying to be an entrepreneur :)
 
+<p>
+   <br/>
+<i>
+Lead programmer with a track record of incorporating user and business requirements into cost-effective, secure and user-friendly solutions known for scalability and durability. 
+
+ <br/>
+Pragmatic full stack developer, agilist, quick learner. Supportive and enthusiastic dedicated to streamlining processes and efficiently resolving issues.
+
+</i>
+</p>
 <h4>Skills</h4>
 <p>
 Ruby (Rails)

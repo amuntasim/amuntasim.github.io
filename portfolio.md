@@ -8,7 +8,7 @@ permalink: /portfolio/
 {% for project in site.portfolio %}
 
 {% if project.redirect %}
-<div class="project">
+<div class="col-xs-4">
     <div class="thumbnail">
         <a href="{{ project.redirect }}" target="_blank">
         {% if project.img %}
@@ -17,7 +17,7 @@ permalink: /portfolio/
         <div class="thumbnail blankbox"></div>
         {% endif %}    
         <span>
-            <h1>{{ project.title }}</h1>
+            <h2>{{ project.title }}</h2>
             <br/>
             <p>{{ project.description }}</p>
         </span>
@@ -26,7 +26,7 @@ permalink: /portfolio/
 </div>
 {% else %}
 
-<div class="project ">
+<div class="col-xs-4 ">
     <div class="thumbnail">
         <a href="{{ site.baseurl }}{{ project.url }}">
         {% if project.img %}
@@ -35,7 +35,7 @@ permalink: /portfolio/
         <div class="thumbnail blankbox"></div>
         {% endif %}    
         <span>
-            <h1>{{ project.title }}</h1>
+            <h2>{{ project.title }}</h2>
             <br/>
             <p>{{ project.description }}</p>
         </span>
